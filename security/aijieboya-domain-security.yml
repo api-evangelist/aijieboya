@@ -1,0 +1,22 @@
+generated: '2026-09-14'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: agilebio.com.cn
+  https: false
+  note: >-
+    No TLS listener on port 443. The only site this company operates is served over
+    plaintext HTTP; https://agilebio.com.cn/ does not connect at all (curl exit 7 /
+    HTTP code 000). The apex is a CNAME to agilebio.gotoip11.com -> web.s1312.vhostgo.com
+    (211.149.233.219), Chinese shared hosting.
+domains:
+- domain: agilebio.com.cn
+  dnssec: false
+  caa: []
+  caa_note: >-
+    No CAA record is published. `dig +short CAA agilebio.com.cn` answers only with the
+    apex CNAME (agilebio.gotoip11.com.), which probe-domain-security.py 0.x records as a
+    CAA value; the authoritative answer section carries a CNAME RR and no CAA RR. Hand
+    corrected 2026-09-14 — see the note in the enrichment report.
+  spf: true
+  dmarc: false

@@ -1,0 +1,12 @@
+generated: '2026-09-14'
+method: searched
+source: http://agilebio.com.cn/en
+limit_count: 0
+note: >-
+  No rate limits are documented because no API is published. Contract discovery
+  (2026-09-14) probed every OpenAPI/Swagger/GraphQL/MCP/A2A/llms.txt path against
+  agilebio.com.cn and www.agilebio.com.cn and found nothing; the WordPress REST API at
+  /wp-json/ is the CMS's own surface and does not answer at all (180s timeout). There
+  is therefore no runtime rate-limit header, no exhaustion status code and no published
+  quota to record.
+limits: []

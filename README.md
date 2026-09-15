@@ -64,5 +64,38 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Aijieboya is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/aijieboya
+Suzhou Aijie Boya Technology Co., Ltd. (苏州艾捷博雅科技有限公司), trading internationally as **Agilebio**,
+is a Suzhou Industrial Park manufacturer of chromatography separation and purification technology,
+founded in 2020 by Dr. Wang Qunjie. It develops high-purity spherical silica gel chromatographic
+media, magnetic solid-phase extraction (mSPE) consumables and precision fluid automation instruments
+— the AutoY32 automated sample pretreatment system, the SmartPurifier preparative MPLC series and the
+Bonnasil filler lines — for biopharmaceutical manufacturing, clinical mass spectrometry, peptide and
+nucleic-acid drug purification, natural product extraction and food testing laboratories. It runs the
+Agilebio and Biosepur brands and markets an "Industrial Chromatography 4.0" platform.
+
+## No API surface
+
+This company is an instrument and consumables maker, not a software vendor. As of **2026-09-14** it
+publishes no public API, SDK, developer portal, OpenAPI/Swagger document, GraphQL endpoint, MCP
+server, A2A agent card, webhook catalog or `/.well-known/` document. Contract discovery probed every
+candidate path against `agilebio.com.cn` and `www.agilebio.com.cn`; all returned 404 or did not
+answer, and even the site's own WordPress `/wp-json/` route never responds. See `x-coverage` in
+`apis.yml` for the recorded evidence.
+
+Two operational notes from the probe: the site is served over **plaintext HTTP only** — there is no
+TLS listener on port 443 — and the domain publishes no CAA record, no DNSSEC and no DMARC policy
+(`security/aijieboya-domain-security.yml`).
+
+## Not to be confused with
+
+- **AgileBio SARL / AgileBio LLC** (`agilebio.com`, `github.com/AgileBio`) — the French-American maker
+  of the LabCollector LIMS. A different company; nothing it publishes belongs to this record.
+- **Agile BioFoundry** (`github.com/AgileBioFoundry`) — a US Department of Energy consortium.
+
+## Links
+
+- Website: http://agilebio.com.cn/
+- About: http://agilebio.com.cn/en/about-us
+- News: http://agilebio.com.cn/en/news
+- Contact: http://agilebio.com.cn/en/contact-us-2
+- Secondary-market listing: https://equityzen.com/company/aijieboya

@@ -1,0 +1,42 @@
+generated: '2026-09-14'
+method: probed
+source: >-
+  Live HTTP probes of the named /.well-known/ path list against every host this record
+  knows. agilebio.com.cn is the only host Aijieboya operates; there is no API host, no
+  OpenAPI servers[] host and no separate docs or console host, because the company
+  publishes no API.
+note: >-
+  EVERY probed path returned 404 (the WordPress theme 404 page, ~150KB of HTML). No
+  /.well-known/ document of any kind is served, so NO WellKnown or SecurityTxt pointer
+  is wired into apis.yml — this file records a measured absence, not a presence.
+  The www. host is a same-origin alias and answered identically once the origin stopped
+  rate-limiting; the origin is slow and intermittently drops connections under
+  concurrent requests, so each 404 below was confirmed on a serial retry.
+hosts:
+- host: agilebio.com.cn
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 0
+    file: null
+    note: >-
+      Connection timed out on four serial attempts (45s, 60s, 90s). Every sibling path
+      under /.well-known/ on this host returns the WordPress 404 page, so this is the
+      origin dropping the request rather than a served document.
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null

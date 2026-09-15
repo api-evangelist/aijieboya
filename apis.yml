@@ -1,17 +1,36 @@
 aid: aijieboya
 name: Aijieboya
-description: 'Aijieboya is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Suzhou Aijie Boya Technology Co., Ltd. (苏州艾捷博雅科技有限公司), trading internationally
+  as Agilebio, is a Suzhou Industrial Park manufacturer of chromatography separation and purification
+  technology founded in 2020 by Dr. Wang Qunjie. It develops high-purity spherical silica gel
+  chromatographic media, magnetic solid-phase extraction (mSPE) consumables and precision fluid
+  automation instruments — the AutoY32 automated sample pretreatment system, the SmartPurifier
+  preparative MPLC series and the Bonnasil filler lines — for biopharmaceutical manufacturing,
+  clinical mass spectrometry, peptide and nucleic-acid drug purification and food testing
+  laboratories. It runs the Agilebio and Biosepur brands and an "Industrial Chromatography 4.0"
+  platform. An instrument and consumables maker: it publishes no public API, SDK, developer portal
+  or machine-readable contract.'
 url: https://raw.githubusercontent.com/api-evangelist/aijieboya/refs/heads/main/apis.yml
+image: http://agilebio.com.cn/wp-content/uploads/2024/01/logo-0229.png
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass
 specificationVersion: '0.20'
 created: '2026-09-14'
 modified: '2026-09-14'
 tags:
 - Company
+- Chromatography
+- Laboratory Instruments
+- Sample Preparation
+- Separation and Purification
+- Scientific Instruments
+- Life Sciences
+- Clinical Mass Spectrometry
+- Biotechnology
+- Manufacturing
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +38,48 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/aijieboya-domain-security.yml
 - type: Website
+  url: http://agilebio.com.cn/
+- type: About
+  url: http://agilebio.com.cn/en/about-us
+- type: Blog
+  url: http://agilebio.com.cn/en/news
+- type: Support
+  url: http://agilebio.com.cn/en/contact-us-2
+- type: SecondaryMarket
   url: https://equityzen.com/company/aijieboya
+- type: LLMsTxt
+  url: llms/aijieboya-llms.txt
+- type: Plans
+  url: plans/aijieboya-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/aijieboya-rate-limits.yml
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Aijieboya (Agilebio) sells physical laboratory hardware — chromatography columns,
+    silica gel separation media and automated sample-pretreatment instruments — and its
+    entire web presence is a WordPress product-catalog site at http://agilebio.com.cn/
+    with no developer, API, docs or integration section anywhere in its navigation;
+    every OpenAPI, GraphQL, MCP, A2A and /.well-known/ path probed on that host returned
+    404, and even the CMS's own /wp-json/ REST route never answers.
+  evidence:
+    - url: http://agilebio.com.cn/en
+      status: 200
+    - url: http://agilebio.com.cn/openapi.json
+      status: 404
+    - url: http://agilebio.com.cn/.well-known/agent-card.json
+      status: 404
+    - url: http://agilebio.com.cn/.well-known/api-catalog
+      status: 404
+    - url: http://agilebio.com.cn/wp-json/
+      status: 0
+  checked: '2026-09-14'
+x-enrichment:
+  date: '2026-09-14'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v3
