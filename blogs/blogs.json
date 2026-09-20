@@ -1,0 +1,14 @@
+{
+  "repo": "aijieboya",
+  "feeds": [
+    {
+      "source": "http://agilebio.com.cn/en/about-us",
+      "feed_url": "http://agilebio.com.cn/en/about-us/blog/rss/",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-09-19T20:17:39Z"
+}
