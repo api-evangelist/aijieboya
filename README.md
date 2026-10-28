@@ -64,38 +64,93 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Suzhou Aijie Boya Technology Co., Ltd. (苏州艾捷博雅科技有限公司), trading internationally as **Agilebio**,
-is a Suzhou Industrial Park manufacturer of chromatography separation and purification technology,
-founded in 2020 by Dr. Wang Qunjie. It develops high-purity spherical silica gel chromatographic
-media, magnetic solid-phase extraction (mSPE) consumables and precision fluid automation instruments
-— the AutoY32 automated sample pretreatment system, the SmartPurifier preparative MPLC series and the
-Bonnasil filler lines — for biopharmaceutical manufacturing, clinical mass spectrometry, peptide and
-nucleic-acid drug purification, natural product extraction and food testing laboratories. It runs the
-Agilebio and Biosepur brands and markets an "Industrial Chromatography 4.0" platform.
+Suzhou Aijie Boya Technology Co., Ltd. (苏州艾捷博雅科技有限公司), trading internationally as Agilebio, is a Suzhou Industrial Park manufacturer of chromatography separation and purification technology founded in 2020 by Dr. Wang Qunjie. It develops high-purity spherical silica gel chromatographic media, magnetic solid-phase extraction (mSPE) consumables and precision fluid automation instruments — the AutoY32 automated sample pretreatment system, the SmartPurifier preparative MPLC series and the Bonnasil filler lines — for biopharmaceutical manufacturing, clinical mass spectrometry, peptide and nucleic-acid drug purification and food testing laboratories. It runs the Agilebio and Biosepur brands and an "Industrial Chromatography 4.0" platform. An instrument and consumables maker: it publishes no public API, SDK, developer portal or machine-readable contract.
 
-## No API surface
+**Areas:** Company · Chromatography · Laboratory Instruments · Sample Preparation · Separation and Purification · Scientific Instruments · Life Sciences · Clinical Mass Spectrometry · Biotechnology · Manufacturing · China
 
-This company is an instrument and consumables maker, not a software vendor. As of **2026-09-14** it
-publishes no public API, SDK, developer portal, OpenAPI/Swagger document, GraphQL endpoint, MCP
-server, A2A agent card, webhook catalog or `/.well-known/` document. Contract discovery probed every
-candidate path against `agilebio.com.cn` and `www.agilebio.com.cn`; all returned 404 or did not
-answer, and even the site's own WordPress `/wp-json/` route never responds. See `x-coverage` in
-`apis.yml` for the recorded evidence.
+## Aijieboya on APIs.io
 
-Two operational notes from the probe: the site is served over **plaintext HTTP only** — there is no
-TLS listener on port 443 — and the domain publishes no CAA record, no DNSSEC and no DMARC policy
-(`security/aijieboya-domain-security.yml`).
+Everything profiled for Aijieboya is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/aijieboya/](https://apis.io/providers/aijieboya/)** — or go straight to one of the APIs or properties below.
 
-## Not to be confused with
+### Published properties
 
-- **AgileBio SARL / AgileBio LLC** (`agilebio.com`, `github.com/AgileBio`) — the French-American maker
-  of the LabCollector LIMS. A different company; nothing it publishes belongs to this record.
-- **Agile BioFoundry** (`github.com/AgileBioFoundry`) — a US Department of Energy consortium.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Links
+#### Security (1)
 
-- Website: http://agilebio.com.cn/
-- About: http://agilebio.com.cn/en/about-us
-- News: http://agilebio.com.cn/en/news
-- Contact: http://agilebio.com.cn/en/contact-us-2
-- Secondary-market listing: https://equityzen.com/company/aijieboya
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Aijieboya Domain Security](https://apis.io/security/aijieboya/aijieboya-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Aijieboya Plans Pricing](https://apis.io/plans/aijieboya/aijieboya-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Aijieboya Rate Limits](https://apis.io/rate-limits/aijieboya/aijieboya-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](http://agilebio.com.cn/)
+- [Support](http://agilebio.com.cn/en/contact-us-2)
+- [Blog](http://agilebio.com.cn/en/news)
+
+## API Evangelist rating
+
+**Kin Score 5.4** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 0.0 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.7** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/aijieboya/](https://apis.io/providers/aijieboya/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Aijieboya: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/aijieboya/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
